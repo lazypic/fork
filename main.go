@@ -27,13 +27,13 @@ func main() {
 	flag.StringVar(&remote, "remote", "origin", "remote to fork")
 	flag.Parse()
 
-	user := os.Getenv("FORK_GITHUB_USER")
+	user := os.Getenv("GITHUB_USER")
 	if user == "" {
-		die("FORK_GITHUB_USER not specified")
+		die("GITHUB_USER not specified")
 	}
-	token := os.Getenv("FORK_GITHUB_AUTH")
+	token := os.Getenv("GITHUB_AUTH")
 	if user == "" {
-		die("FORK_GITHUB_AUTH not specified")
+		die("GITHUB_AUTH not specified")
 	}
 
 	var url string
