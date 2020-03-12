@@ -12,11 +12,11 @@ fork # in a git repository
 
 ### Environment
 
-You need to set these environment variables to create fork or access private repo.
+You need to set these environment variables to create fork.
 
 ```
-FORK_GITHUB_USER # your github id
-FORK_GITHUB_AUTH # your github authentication token
+GITHUB_USER # your github id
+GITHUB_AUTH # your github authentication token
 ```
 
 ### Create an Authentication token
